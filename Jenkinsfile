@@ -3,7 +3,6 @@ pipeline{
     parameters{
         string(defaultValue: 'eu-central-1', name: 'REGION')
         string(name: 'DOCKER_TAG')
-        booleanParam(name:'UPDATE_SERVICE', defaultValue: false, description: 'Update ECS service?')
     }
 
     stages{

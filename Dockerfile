@@ -1,6 +1,7 @@
 FROM php:7.4-fpm
 RUN apt-get update -y \
-&& apt-get install -y nginx
+&& apt-get install -y nginx \
+&& apt-get install -y awscli
 RUN mkdir /code &&\
     chown www-data:www-data -R /code
 COPY ./code/index.php /code/index.php
